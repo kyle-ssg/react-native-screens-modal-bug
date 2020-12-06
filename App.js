@@ -22,7 +22,7 @@ const App: () => React$Node = () => {
         backgroundColor="transparent"
         translucent
       />
-      <Screen style={{flex: 1}} active>
+      <Screen style={{flex: 1}} activityState={2}>
         <View style={{flex: 1, backgroundColor: '#222'}}>
           <View style={{flex: 1}} />
           <Button title="Show Modal" onPress={() => setShowModal(true)} />
@@ -39,3 +39,4 @@ const App: () => React$Node = () => {
   );
 };
 export default App;
+
